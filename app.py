@@ -30,7 +30,7 @@ def load_trained_model():
 
 @st.cache_data
 def load_dataset():
-    data_path = os.path.join("dataset", "Crop_recommendation.csv")
+    data_path =  "Crop_recommendation.csv"
     if not os.path.exists(data_path):
         st.error(f"❌ Dataset file '{data_path}' not found!")
         st.stop()
